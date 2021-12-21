@@ -1,0 +1,11 @@
+- name: Install WordPress, MariaDB, Nginx, PHP-FPM
+  hosts: lampwp lampwp2
+  remote_user: azureuser
+  become: yes
+
+  roles:
+    - { role: repo, tags: [ 'repo' ] }
+    - { role: mariadb, tags: [ 'db' ] }
+    - { role: nginx, tags: [ 'web' ] }
+    - { role: php-fpm, tags: [ 'fpm' ] }
+    - { role: wordpress, tags: [ 'wp' ] } 
