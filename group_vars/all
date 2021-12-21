@@ -13,7 +13,7 @@ wp_db_password: password
 
 # Nginx server configuration
 nginx_port: 80
-server_hostname: ansible.ozzuakh.pp.ua
+server_hostname: your.host.name
 
 # Disable All Updates
 # By default automatic updates are enabled, set this value to true to disable all automatic updates
